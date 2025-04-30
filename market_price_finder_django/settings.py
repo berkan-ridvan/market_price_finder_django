@@ -28,7 +28,7 @@ SECRET_KEY = config('SECRET_KEY', default='your-secret-key-here')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'market-price-finder-django.onrender.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'market-price-finder-django.onrender.com', '.onrender.com']
 
 
 # Application definition
