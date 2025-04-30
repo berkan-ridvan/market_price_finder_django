@@ -1,6 +1,4 @@
 from django.db import models
-from django.contrib.auth import get_user_model
-from django.db.utils import OperationalError
 # Create your models here.
 
 class Item(models.Model):
@@ -21,13 +19,3 @@ class Item(models.Model):
         ordering = ['-created_at']
 
 
-def create_admin():
-    User = get_user_model()
-    if not User.objects.filter(username='admin').exists():
-        try:
-            User.objects.create_superuser('admin', 'admin@example.com', 'admin12345')
-            print("Superuser 'admin' created.")
-        except OperationalError:
-            pass  # migration öncesi hata olmasın
-
-create_admin()
