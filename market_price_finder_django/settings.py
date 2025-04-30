@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-($m(7^4#ys=7=%(7=)_i9egs%%ibc#)t@_o+h)5)9^yu_-m^!u
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'market-price-finder-django.onrender.com']
 
 
 # Application definition
