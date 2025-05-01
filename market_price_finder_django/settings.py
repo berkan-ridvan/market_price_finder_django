@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config('SECRET_KEY', default='your-secret-key-here')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True  # Geçici olarak debug modunu açıyoruz
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'market-price-finder-django.onrender.com', '.onrender.com']
 
@@ -154,5 +154,6 @@ CLOUDINARY_STORAGE = {
     'CLOUD_NAME': config('CLOUDINARY_CLOUD_NAME'),
     'API_KEY': config('CLOUDINARY_API_KEY'),
     'API_SECRET': config('CLOUDINARY_API_SECRET'),
+    'EXCLUDE_DELETE_ORPHANED_MEDIA': True,  # Silinen medya dosyalarını Cloudinary'den silmiyoruz
 }
 
