@@ -20,7 +20,7 @@ A Django-based web application that helps users compare product prices across di
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/market-price-finder.git
+git clone https://github.com/berkan-ridvan/market-price-finder.git
 cd market-price-finder
 ```
 
